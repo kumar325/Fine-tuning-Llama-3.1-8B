@@ -1,0 +1,31 @@
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+HPU available: False, using: 0 HPUs
+----------------------------------------------------------------------------------------------------
+distributed_backend=nccl
+All distributed processes registered. Starting with 1 processes
+----------------------------------------------------------------------------------------------------
+
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+
+  | Name  | Type          | Params | Mode 
+------------------------------------------------
+0 | model | Float16Module | 8.0 B  | train
+------------------------------------------------
+10.5 M    Trainable params
+8.0 B     Non-trainable params
+8.0 B     Total params
+32,162.988Total estimated model params size (MB)
+Metric val_loss improved. New best score: 3.313
+Epoch 0, global step 10: 'validation_loss' reached 3.31329 (best 3.31329), saving model to '/root/verb-workspace/results/Meta-llama3.1-8B-Instruct-titlegen/checkpoints/megatron_gpt_peft_lora_tuning--validation_loss=3.313-step=10-consumed_samples=320.0.ckpt' as top 1
+Metric val_loss improved by 0.750 >= min_delta = 0.001. New best score: 2.563
+Epoch 0, global step 20: 'validation_loss' reached 2.56297 (best 2.56297), saving model to '/root/verb-workspace/results/Meta-llama3.1-8B-Instruct-titlegen/checkpoints/megatron_gpt_peft_lora_tuning--validation_loss=2.563-step=20-consumed_samples=640.0.ckpt' as top 1
+Metric val_loss improved by 0.586 >= min_delta = 0.001. New best score: 1.977
+Epoch 0, global step 30: 'validation_loss' reached 1.97746 (best 1.97746), saving model to '/root/verb-workspace/results/Meta-llama3.1-8B-Instruct-titlegen/checkpoints/megatron_gpt_peft_lora_tuning--validation_loss=1.977-step=30-consumed_samples=960.0.ckpt' as top 1
+Metric val_loss improved by 0.218 >= min_delta = 0.001. New best score: 1.759
+Epoch 0, global step 40: 'validation_loss' reached 1.75921 (best 1.75921), saving model to '/root/verb-workspace/results/Meta-llama3.1-8B-Instruct-titlegen/checkpoints/megatron_gpt_peft_lora_tuning--validation_loss=1.759-step=40-consumed_samples=1280.0.ckpt' as top 1
+Metric val_loss improved by 0.042 >= min_delta = 0.001. New best score: 1.717
+Epoch 0, global step 50: 'validation_loss' reached 1.71685 (best 1.71685), saving model to '/root/verb-workspace/results/Meta-llama3.1-8B-Instruct-titlegen/checkpoints/megatron_gpt_peft_lora_tuning--validation_loss=1.717-step=50-consumed_samples=1600.0.ckpt' as top 1
+`Trainer.fit` stopped: `max_steps=50` reached.
+Restoring states from the checkpoint path at /root/verb-workspace/results/Meta-llama3.1-8B-Instruct-titlegen/checkpoints/megatron_gpt_peft_lora_tuning--validation_loss=1.717-step=50-consumed_samples=1600.0.ckpt
+Restored all states from the checkpoint at /root/verb-workspace/results/Meta-llama3.1-8B-Instruct-titlegen/checkpoints/megatron_gpt_peft_lora_tuning--validation_loss=1.717-step=50-consumed_samples=1600.0.ckpt
